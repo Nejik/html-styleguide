@@ -345,7 +345,7 @@ Bad:
 Good:
 ```html
 <!DOCTYPE html>
-<input type='radio' required>
+<input type="radio" required>
 ```
 
 ## Don’t put white spaces around tags and attribute values
