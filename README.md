@@ -7,7 +7,7 @@ For writing maintainable and scalable HTML documents
     * [Use DOCTYPE](#use-doctype)
     * [Write tags and attributes in lower case](#write-tags-and-attributes-in-lower-case)
     * [Add closing tags](#add-closing-tags)
-    * [Omit Forward slash](#omit-forward-slash)
+    * [Omit forward slash](#omit-forward-slash)
     * [Write one list item per line](#write-one-list-item-per-line)
     * [Add single line break between components](#add-single-line-break-between-components)
     * [Add alt attribute to img](#add-alt-attribute-to-img)
@@ -64,7 +64,7 @@ Good:
 
 
 
-## Tags and attributes in lower case
+## Write tags and attributes in lower case
 Tags and attributes should be in lowercase
 
 Bad:
@@ -108,7 +108,7 @@ Good:
 ```
 *Exception is unclosed `<li>` tags, when you use `display:inline-block;` to avoid unnecessary space between items
 
-## Forward slash
+## Omit forward slash
 Don't add the forward slash for self-closing elements (img, br, hr, input)
 
 Bad:
@@ -153,7 +153,7 @@ Good:
 </tr>
 ```
 
-## Single line break between components
+## Add single line break between components
 Put a single line break between blocks/components.
 
 Bad:
@@ -201,57 +201,6 @@ Good:
 <html lang="en-US">
 ```
 
-
-# BODY
-
-## Add body element
-Sometimes body element is complemented in unexpected position by a browsers
-
-Bad:
-```html
-<html>
-  <head>
-    ...
-  </head>
-  ...
-</html>
-```
-Good:
-```html
-<html>
-  <head>
-    ...
-  </head>
-  <body>
-    ...
-  </body>
-</html>
-```
-
-## Add `<script>` before `</body>`
-Add all your scripts before `</body>`
-
-Bad:
-```html
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <script src="app.js"></script>
-  </head>
-  <body>…</body>
-</html>
-```
-Good:
-```html
-<!DOCTYPE html>
-<html lang="ru">
-  <head>…</head>
-  <body>
-    <!-- your page -->
-    <script src="app.js"></script>
-  </body>
-</html>
-```
 
 # HEAD
 
@@ -320,9 +269,60 @@ Good:
 </html>
 ```
 
+# BODY
+
+## Add body element
+Sometimes body element is complemented in unexpected position by a browsers
+
+Bad:
+```html
+<html>
+  <head>
+    ...
+  </head>
+  ...
+</html>
+```
+Good:
+```html
+<html>
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+```
+
+## Add `<script>` before `</body>`
+Add all your scripts before `</body>`
+
+Bad:
+```html
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <script src="app.js"></script>
+  </head>
+  <body>…</body>
+</html>
+```
+Good:
+```html
+<!DOCTYPE html>
+<html lang="ru">
+  <head>…</head>
+  <body>
+    <!-- your page -->
+    <script src="app.js"></script>
+  </body>
+</html>
+```
+
 # Attributes
 
-## Double quotes
+## Use double quotes
 Surround values for attributes in double quotes.
 Even though quotes around attributes is optional, always put quotes around attributes for readability.
 
@@ -360,7 +360,7 @@ Good:
 <section class="component"></h1>
 ```
 
-## Attributes order
+## Set attributes order
 Follow this order for attributes:
 
 * href, type, value
